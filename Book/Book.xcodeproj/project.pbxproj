@@ -10,10 +10,15 @@
 		1773CA1AE17169DF583C92A3 /* Pods_Book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126B61C1974EF66194A52FE1 /* Pods_Book.framework */; };
 		624C461E2C149C3A00CA8024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C461D2C149C3A00CA8024 /* AppDelegate.swift */; };
 		624C46202C149C3A00CA8024 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C461F2C149C3A00CA8024 /* SceneDelegate.swift */; };
-		624C46222C149C3A00CA8024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C46212C149C3A00CA8024 /* ViewController.swift */; };
+		624C46222C149C3A00CA8024 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C46212C149C3A00CA8024 /* SplashController.swift */; };
 		624C46252C149C3A00CA8024 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 624C46242C149C3A00CA8024 /* Base */; };
 		624C46272C149C3B00CA8024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624C46262C149C3B00CA8024 /* Assets.xcassets */; };
 		624C462A2C149C3B00CA8024 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 624C46292C149C3B00CA8024 /* Base */; };
+		624C46322C149E7500CA8024 /* BookListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C46312C149E7500CA8024 /* BookListController.swift */; };
+		624C46352C14A2F400CA8024 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C46342C14A2F400CA8024 /* View.swift */; };
+		624C463A2C14AC7A00CA8024 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C46392C14AC7A00CA8024 /* Book.swift */; };
+		624C463E2C14B93900CA8024 /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C463D2C14B93900CA8024 /* BookListViewModel.swift */; };
+		624C46402C14BF5000CA8024 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C463F2C14BF5000CA8024 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +26,16 @@
 		624C461A2C149C3A00CA8024 /* Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Book.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624C461D2C149C3A00CA8024 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624C461F2C149C3A00CA8024 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		624C46212C149C3A00CA8024 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		624C46212C149C3A00CA8024 /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		624C46242C149C3A00CA8024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		624C46262C149C3B00CA8024 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624C46292C149C3B00CA8024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624C462B2C149C3B00CA8024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624C46312C149E7500CA8024 /* BookListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListController.swift; sourceTree = "<group>"; };
+		624C46342C14A2F400CA8024 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		624C46392C14AC7A00CA8024 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		624C463D2C14B93900CA8024 /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
+		624C463F2C14BF5000CA8024 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		8168B3F297E01437468C38C2 /* Pods-Book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book.release.xcconfig"; path = "Target Support Files/Pods-Book/Pods-Book.release.xcconfig"; sourceTree = "<group>"; };
 		FA20E24B216F8709C56A0BF6 /* Pods-Book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book.debug.xcconfig"; path = "Target Support Files/Pods-Book/Pods-Book.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,7 +75,9 @@
 			children = (
 				624C461D2C149C3A00CA8024 /* AppDelegate.swift */,
 				624C461F2C149C3A00CA8024 /* SceneDelegate.swift */,
-				624C46212C149C3A00CA8024 /* ViewController.swift */,
+				624C46212C149C3A00CA8024 /* SplashController.swift */,
+				624C46372C14AC4B00CA8024 /* BookList */,
+				624C46332C14A2D800CA8024 /* Extention */,
 				624C46232C149C3A00CA8024 /* Main.storyboard */,
 				624C46262C149C3B00CA8024 /* Assets.xcassets */,
 				624C46282C149C3B00CA8024 /* LaunchScreen.storyboard */,
@@ -74,13 +86,47 @@
 			path = Book;
 			sourceTree = "<group>";
 		};
+		624C46332C14A2D800CA8024 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				624C46342C14A2F400CA8024 /* View.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		624C46372C14AC4B00CA8024 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				624C463B2C14B91800CA8024 /* ViewModel */,
+				624C46382C14AC6700CA8024 /* Model */,
+				624C46312C149E7500CA8024 /* BookListController.swift */,
+				624C463F2C14BF5000CA8024 /* BookCell.swift */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		624C46382C14AC6700CA8024 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				624C46392C14AC7A00CA8024 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		624C463B2C14B91800CA8024 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				624C463D2C14B93900CA8024 /* BookListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C5EDB6471C5DBF0DA9FF46C6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				FA20E24B216F8709C56A0BF6 /* Pods-Book.debug.xcconfig */,
 				8168B3F297E01437468C38C2 /* Pods-Book.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -103,6 +149,7 @@
 				624C46162C149C3A00CA8024 /* Sources */,
 				624C46172C149C3A00CA8024 /* Frameworks */,
 				624C46182C149C3A00CA8024 /* Resources */,
+				0AC2A0006367854ADE05E995 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +207,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0AC2A0006367854ADE05E995 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Book/Pods-Book-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Book/Pods-Book-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Book/Pods-Book-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D358E1669B7DF392B0BCD93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,8 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624C46222C149C3A00CA8024 /* ViewController.swift in Sources */,
+				624C46222C149C3A00CA8024 /* SplashController.swift in Sources */,
 				624C461E2C149C3A00CA8024 /* AppDelegate.swift in Sources */,
+				624C463A2C14AC7A00CA8024 /* Book.swift in Sources */,
+				624C46352C14A2F400CA8024 /* View.swift in Sources */,
+				624C46402C14BF5000CA8024 /* BookCell.swift in Sources */,
+				624C46322C149E7500CA8024 /* BookListController.swift in Sources */,
+				624C463E2C14B93900CA8024 /* BookListViewModel.swift in Sources */,
 				624C46202C149C3A00CA8024 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6FC2SA57XT;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Book/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -374,6 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6FC2SA57XT;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Book/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
